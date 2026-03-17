@@ -121,8 +121,11 @@ def run(topic: str):
         # ── Step 5: merge video + voice ──────────────────────────────────────
         if not job.has_step("merge"):
             print("\n[Agent] Step 5: Merging video with voice...")
-            editor     = VideoEditor()
-            final_path = os.path.join(OUTPUT_DIR, f"final_{job.id}.mp4")
+            editor = VideoEditor()
+            # use title as filename, fallback to job id
+            safe_title = "".join(c if c.isalnum() or c in " -_" else "" for c in job.title)
+            safe_title = safe_title.strip().replace(" ", "_") or f"video_{job.id}"
+            final_path = os.path.join(OUTPUT_DIR, f"{safe_title}.mp4")
             editor.combine(COMBINED_VID, VOICE_PATH, final_path)
             job.final_path = final_path
             job.add_step("merge")
