@@ -69,7 +69,7 @@ def run(topic: str):
             job.title       = get_title(job.topic)
             job.description = get_description(job.topic)
             job.story       = get_story(job.topic)
-            prompts         = get_video_prompts(job.topic, user_request=job.topic)
+            prompts         = get_video_prompts(job.topic)
             job.set_prompts(prompts)
             job.add_step("content")
             session.commit()

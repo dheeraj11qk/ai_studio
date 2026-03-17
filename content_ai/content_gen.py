@@ -44,29 +44,35 @@ def _ollama(prompt: str, num_predict: int = 300) -> str:
 
 # ── Fallbacks ────────────────────────────────────────────────────────────────
 
-_FALLBACK_TITLE = "The Magical Adventure Begins"
+def _fallback_title(topic: str) -> str:
+    return f"The Amazing {topic.title()} Story"
 
-_FALLBACK_DESCRIPTION = (
-    "Join our lovable characters on a breathtaking journey full of wonder and surprises! "
-    "Watch as they discover the true meaning of friendship and courage in a magical world. "
-    "Don't forget to like and subscribe for more enchanting stories!"
-)
+def _fallback_description(topic: str) -> str:
+    return (
+        f"Join us on an incredible journey featuring {topic}! "
+        "Watch as the story unfolds with excitement, heart, and unforgettable moments. "
+        "Don't forget to like and subscribe for more amazing stories!"
+    )
 
-_FALLBACK_STORY = (
-    "Benny the fluffy rabbit laughed at slow Tilly the turtle. "
-    "They raced through Whispering Woods on a bright sunny morning. "
-    "Benny napped beneath a cozy mushroom, dreaming of victory. "
-    "Tilly tiptoed past, her shell gleaming softly. "
-    "At the finish line, Tilly waited, waving cheerfully as Benny finally arrived, blushing."
-)
+def _fallback_story(topic: str) -> str:
+    return (
+        f"It was a quiet evening when the story of {topic} began. "
+        "Every moment felt alive with possibility and wonder. "
+        "Challenges arose, but courage and determination led the way. "
+        "In the end, everything came together beautifully. "
+        "And so the adventure concluded, leaving smiles all around."
+    )
 
-_FALLBACK_PROMPTS = [
-    "Generate a video of a fluffy cartoon rabbit and a cute turtle standing at a sunlit forest race start line, soft pastel colors, warm golden hour light, wide establishing shot, illustration style with fluffy storybook textures, lush green trees in background, cheerful expressions, 8K detail",
-    "Generate a video of a fluffy cartoon rabbit dashing through an enchanted forest path lined with glowing flowers, motion blur on legs, dynamic tracking shot, vibrant storybook colors, magical sparkles in the air, illustration style with fluffy textures, cinematic depth of field",
-    "Generate a video of a fluffy cartoon rabbit sleeping peacefully under a giant spotted mushroom, dreamy soft lighting, close-up shot, golden dappled sunlight through leaves, illustration style with fluffy storybook textures, tiny butterflies resting nearby, warm pastel palette",
-    "Generate a video of a cute cartoon turtle walking steadily along a glowing forest path, determined expression, low-angle tracking shot, magical fireflies lighting the way, illustration style with fluffy textures, deep enchanted forest background, vibrant storybook colors, cinematic atmosphere",
-    "Generate a video of a cute cartoon turtle crossing a flower-covered finish line, triumphant pose, wide celebratory shot, confetti raining down, a surprised fluffy rabbit in background, illustration style with fluffy storybook textures, warm cheerful lighting, vibrant pastel colors",
-]
+def _fallback_prompts(topic: str, count: int) -> list[str]:
+    """Generate simple topic-based fallback prompts when Ollama is unavailable."""
+    templates = [
+        "Generate a video of {topic}, wide establishing shot, cinematic lighting, soft illustration style, warm pastel palette, highly detailed",
+        "Generate a video of {topic}, close-up shot, dramatic lighting, rich colors, storybook illustration style, cinematic atmosphere",
+        "Generate a video of {topic}, tracking shot, golden hour lighting, vibrant colors, soft illustration style, detailed background",
+        "Generate a video of {topic}, low-angle shot, atmospheric lighting, deep background, illustration style with warm tones, cinematic depth of field",
+        "Generate a video of {topic}, aerial shot, bright cheerful lighting, colorful environment, soft storybook illustration style, 8K detail",
+    ]
+    return [templates[i % len(templates)].format(topic=topic) for i in range(count)]
 
 
 # ── Public functions ─────────────────────────────────────────────────────────
@@ -77,7 +83,7 @@ def get_title(topic: str) -> str:
         return _ollama(title_prompt(topic), num_predict=50)
     except Exception as e:
         print(f"[ContentGen] Ollama unavailable for title ({e}), using fallback.")
-        return _FALLBACK_TITLE
+        return _fallback_title(topic)
 
 
 def get_description(topic: str) -> str:
@@ -86,7 +92,7 @@ def get_description(topic: str) -> str:
         return _ollama(description_prompt(topic), num_predict=150)
     except Exception as e:
         print(f"[ContentGen] Ollama unavailable for description ({e}), using fallback.")
-        return _FALLBACK_DESCRIPTION
+        return _fallback_description(topic)
 
 
 def get_story(topic: str) -> str:
@@ -95,7 +101,7 @@ def get_story(topic: str) -> str:
         return _ollama(story_prompt(topic), num_predict=200)
     except Exception as e:
         print(f"[ContentGen] Ollama unavailable for story ({e}), using fallback.")
-        return _FALLBACK_STORY
+        return _fallback_story(topic)
 
 
 def get_video_prompts(topic: str, user_request: str = "1 min video") -> list[str]:
@@ -122,13 +128,13 @@ def get_video_prompts(topic: str, user_request: str = "1 min video") -> list[str
         raise ValueError("Empty or invalid JSON array")
     except Exception as e:
         print(f"[ContentGen] Ollama unavailable for video prompts ({e}), using fallback.")
-        return [_FALLBACK_PROMPTS[i % len(_FALLBACK_PROMPTS)] for i in range(count)]
+        return _fallback_prompts(topic, count)
 
 
 # ── CLI test ─────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    topic       = "a rabbit and turtle race through an enchanted forest"
+    topic       = "man working in office late night"
     user_request = "1 min video"
 
     print("\n=== TITLE ===")
