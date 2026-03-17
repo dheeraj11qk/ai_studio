@@ -4,17 +4,16 @@ APP_PROJECT = meta_ai/meta_ai_app.xcodeproj
 DERIVED_DATA = $(HOME)/Library/Developer/Xcode/DerivedData
 VENV = .venv/bin/python
 
-.PHONY: video build-app open-app kill-app content_test ollama-start voice_test
+.PHONY: video build-app open-app kill-app content_test ollama-start voice_test install
+
 
 ## Run full pipeline: make video TOPIC="your topic here"
-video: build-app open-app ollama-start
+video: build-app open-app ollama-start ollama-start
 	$(VENV) agent_ai/agent.py "$(TOPIC)"
 
 video_test: build-app open-app
 	$(VENV) vision_ai/video_gen.py
 
-# voice_test: PYTHONPATH=$(PWD) 
-# 	$(VENV) audio-ai/voice_gen.py
 
 ## Ensure Ollama is running with qwen2.5:7b
 ollama-start:
@@ -22,7 +21,6 @@ ollama-start:
 	@pgrep -x ollama > /dev/null || (ollama serve &> /dev/null & sleep 3 && echo "[Make] Ollama started.")
 	@ollama pull qwen2.5:7b 2>/dev/null || true
 	@echo "[Make] Ollama ready with qwen2.5:7b"
-
 ## Run content generation test
 content_test: ollama-start
 	PYTHONPATH=$(PWD) $(VENV) content_ai/content_gen.py

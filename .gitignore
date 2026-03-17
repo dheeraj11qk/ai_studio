@@ -9,6 +9,7 @@ dist/
 build/
 .eggs/
 
+
 # Audio / Video outputs
 *.wav
 *.mp3
@@ -44,3 +45,6 @@ DerivedData/
 # Temp
 /tmp/
 /temp/
+
+# Database
+pipeline.db
