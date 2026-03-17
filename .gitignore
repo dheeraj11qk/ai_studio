@@ -48,3 +48,6 @@ DerivedData/
 
 # Database
 pipeline.db
+
+# Built app bundle (binary, rebuild with make build-app)
+meta_ai/meta_ai_app.app

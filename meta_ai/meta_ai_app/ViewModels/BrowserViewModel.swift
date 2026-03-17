@@ -330,9 +330,16 @@ class BrowserViewModel: NSObject, ObservableObject, WKNavigationDelegate, WKScri
 
         do {
             try server.start(5003)
-            print("Server started at http://localhost:5003")
+            print("✅ Server started successfully at http://localhost:5003")
         } catch {
-            print("Server failed to start")
+            print("❌ Server failed to start on port 5003: \(error)")
+            print("Trying alternative port 5004...")
+            do {
+                try server.start(5004)
+                print("✅ Server started on alternative port 5004")
+            } catch {
+                print("❌ Server failed on port 5004 too: \(error)")
+            }
         }
     }
     

@@ -9,23 +9,36 @@ SERVER = "http://localhost:5003"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SEGMENTS_DIR = os.path.join(ROOT, "temp", "video_segments")
+APP_BUNDLE   = os.path.join(ROOT, "meta_ai", "meta_ai_app.app")
 
 
 def find_app_path() -> str:
+    # prefer the bundled app in the project
+    if os.path.isdir(APP_BUNDLE):
+        return APP_BUNDLE
+    # fallback to DerivedData
     pattern = os.path.expanduser(
         "~/Library/Developer/Xcode/DerivedData/meta_ai_app-*/Build/Products/Debug/meta_ai_app.app"
     )
     matches = glob.glob(pattern)
     if not matches:
-        raise FileNotFoundError("meta_ai_app.app not found. Build it in Xcode first.")
+        raise FileNotFoundError("meta_ai_app.app not found. Run 'make build-app' first.")
     return max(matches, key=os.path.getmtime)
 
 
 def is_server_running() -> bool:
     try:
         r = requests.get(f"{SERVER}/status", timeout=3)
+        print(f"Server check: {r.status_code}")
         return r.status_code == 200
-    except Exception:
+    except requests.exceptions.ConnectionError:
+        print("Server check: Connection refused")
+        return False
+    except requests.exceptions.Timeout:
+        print("Server check: Timeout")
+        return False
+    except Exception as e:
+        print(f"Server check: {e}")
         return False
 
 
@@ -34,17 +47,26 @@ def ensure_app_running():
         print("App already running.")
         return
 
-    app_path = find_app_path()
-    print(f"Starting app: {app_path}")
-    subprocess.Popen(["open", app_path])
+    # check if app bundle exists, build if not
+    if not os.path.isdir(APP_BUNDLE):
+        print(f"App bundle not found at {APP_BUNDLE}")
+        print("Building app...")
+        result = subprocess.run(["make", "build-app"], cwd=ROOT)
+        if result.returncode != 0:
+            raise RuntimeError("Failed to build app")
 
-    for i in range(30):
-        time.sleep(1)
+    print(f"Starting app: {APP_BUNDLE}")
+    subprocess.Popen(["open", APP_BUNDLE])
+
+    for i in range(60):  # increased from 30 to 60 seconds
+        time.sleep(2)    # check every 2 seconds instead of 1
         if is_server_running():
-            print(f"App started and server ready ({i+1}s)")
+            print(f"App started and server ready ({i*2}s)")
             return
+        if i % 5 == 0:  # print status every 10 seconds
+            print(f"Waiting for server... ({i*2}s)")
 
-    raise RuntimeError("App launched but server did not respond on port 5003 after 30s")
+    raise RuntimeError("App launched but server did not respond on port 5003 after 120s")
 
 
 def generate_video(prompt: str, timeout: int = 120) -> str:
