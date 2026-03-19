@@ -1,9 +1,9 @@
 {
-  "duration": 1,
+  "duration": 3,
   "fps": 24,
   "clips": [
-    { "start": 0.0, "end": 0.3, "action": "wave",    "emotion": "happy"   },
-    { "start": 0.3, "end": 0.7, "action": "talk",    "emotion": "happy"   },
-    { "start": 0.7, "end": 1.0, "action": "nod",     "emotion": "neutral" }
+    { "start": 0.0, "end": 0.5, "action": "wave", "emotion": "happy"   },
+    { "start": 0.5, "end": 2.5, "action": "talk", "emotion": "happy"   },
+    { "start": 2.5, "end": 3.0, "action": "nod",  "emotion": "neutral" }
   ]
 }
