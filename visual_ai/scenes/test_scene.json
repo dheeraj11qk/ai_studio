@@ -1,0 +1,34 @@
+{
+  "background": "outdoor",
+  "character_scale": 4.0,
+  "clips": [
+    {
+      "character": "Player",
+      "action": "idle",
+      "duration": 1.0,
+      "x_start": 200,
+      "x_end": 200
+    },
+    {
+      "character": "Player",
+      "action": "walk",
+      "duration": 3.0,
+      "x_start": 200,
+      "x_end": 1000
+    },
+    {
+      "character": "Player",
+      "action": "cheer1",
+      "duration": 1.0,
+      "x_start": 1000,
+      "x_end": 1000
+    },
+    {
+      "character": "Player",
+      "action": "talk",
+      "duration": 2.0,
+      "x_start": 1000,
+      "x_end": 1000
+    }
+  ]
+}
