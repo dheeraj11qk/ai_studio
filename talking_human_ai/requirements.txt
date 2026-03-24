@@ -1,0 +1,8 @@
+opencv-python
+numpy
+torch
+torchvision
+torchaudio
+librosa
+scipy
+Pillow
