@@ -1,41 +1,4 @@
 {
-  "topic": "Mango grow journey video 1 minutes",
-  "scenes": [
-    {
-      "scene": 1,
-      "text": "",
-      "voice_over": "",
-      "videoCode": "from manim import *\n\nclass Scene1(Scene):\n    def construct(self):\n        self.play(Create(Circle().set_color(WHITE).scale(2)))\n"
-    },
-    {
-      "scene": 2,
-      "text": "Stage: Flowering",
-      "voice_over": "",
-      "videoCode": "from manim import *\n\nclass Scene2(Scene):\n    def construct(self):\n        old_obj = Circle().set_color(WHITE).scale(2)\n        self.add(old_obj)\n        new_obj = Square().set_color(WHITE).scale(1.5)\n        self.play(Transform(old_obj, new_obj))\n"
-    },
-    {
-      "scene": 3,
-      "text": "",
-      "voice_over": "",
-      "videoCode": "from manim import *\n\nclass Scene3(Scene):\n    def construct(self):\n        old_obj = Square().set_color(WHITE).scale(1.5)\n        self.add(old_obj)\n        new_obj = Triangle().set_color(WHITE).scale(1)\n        self.play(Transform(old_obj, new_obj))\n"
-    },
-    {
-      "scene": 4,
-      "text": "",
-      "voice_over": "",
-      "videoCode": "from manim import *\n\nclass Scene4(Scene):\n    def construct(self):\n        old_obj = Triangle().set_color(WHITE).scale(1)\n        self.add(old_obj)\n        new_obj = Rectangle().set_color(WHITE).scale(0.8)\n        self.play(Transform(old_obj, new_obj))\n"
-    },
-    {
-      "scene": 5,
-      "text": "",
-      "voice_over": "",
-      "videoCode": "from manim import *\n\nclass Scene5(Scene):\n    def construct(self):\n        old_obj = Rectangle().set_color(WHITE).scale(0.8)\n        self.add(old_obj)\n        new_obj = Text('Mango').set_color(WHITE).scale(1.5)\n        self.play(Transform(old_obj, new_obj))\n"
-    },
-    {
-      "scene": 6,
-      "text": "",
-      "voice_over": "",
-      "videoCode": "from manim import *\n\nclass Scene6(Scene):\n    def construct(self):\n        old_obj = Text('Mango').set_color(WHITE).scale(1.5)\n        self.add(old_obj)\n        new_obj = Circle().set_color(WHITE).scale(2)\n        self.play(Transform(old_obj, new_obj))\n"
-    }
-  ]
+  "visual_description": "Scene1: A character walks from the home, passes by a school, and then runs towards a park.",
+  "animation_engine": "from manim import *\nclass Scene1(Scene):\n    def construct(self):\n        # Home\n        home = SVGMobject('/Users/dheerajgautam/Documents/ai_studio/quick_board_ai/media/svgs/urban/home-2.svg').set_color(WHITE)\n        self.play(Create(home), run_time=1)\n        self.wait(1)\n\n        # School\n        school = SVGMobject('/Users/dheerajgautam/Documents/ai_studio/quick_board_ai/media/svgs/education/school.svg').set_color(WHITE)\n        self.play(FadeOut(home), home.animate.shift(DOWN * 2.5), Create(school), run_time=1)\n        self.wait(1)\n\n        # Park\n        park = SVGMobject('/Users/dheerajgautam/Documents/ai_studio/quick_board_ai/media/svgs/activity/ball-tennis.svg').set_color(WHITE)\n        self.play(FadeOut(school), school.animate.shift(DOWN * 2.5), Create(park), run_time=1)\n        self.wait(8)\n"
 }
