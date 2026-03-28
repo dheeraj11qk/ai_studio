@@ -1,0 +1,41 @@
+{
+  "topic": "Mango grow journey video 1 minutes",
+  "scenes": [
+    {
+      "scene": 1,
+      "text": "",
+      "voice_over": "",
+      "videoCode": "from manim import *\n\nclass Scene1(Scene):\n    def construct(self):\n        self.play(Create(Circle().set_color(WHITE).scale(2)))\n"
+    },
+    {
+      "scene": 2,
+      "text": "Stage: Flowering",
+      "voice_over": "",
+      "videoCode": "from manim import *\n\nclass Scene2(Scene):\n    def construct(self):\n        old_obj = Circle().set_color(WHITE).scale(2)\n        self.add(old_obj)\n        new_obj = Square().set_color(WHITE).scale(1.5)\n        self.play(Transform(old_obj, new_obj))\n"
+    },
+    {
+      "scene": 3,
+      "text": "",
+      "voice_over": "",
+      "videoCode": "from manim import *\n\nclass Scene3(Scene):\n    def construct(self):\n        old_obj = Square().set_color(WHITE).scale(1.5)\n        self.add(old_obj)\n        new_obj = Triangle().set_color(WHITE).scale(1)\n        self.play(Transform(old_obj, new_obj))\n"
+    },
+    {
+      "scene": 4,
+      "text": "",
+      "voice_over": "",
+      "videoCode": "from manim import *\n\nclass Scene4(Scene):\n    def construct(self):\n        old_obj = Triangle().set_color(WHITE).scale(1)\n        self.add(old_obj)\n        new_obj = Rectangle().set_color(WHITE).scale(0.8)\n        self.play(Transform(old_obj, new_obj))\n"
+    },
+    {
+      "scene": 5,
+      "text": "",
+      "voice_over": "",
+      "videoCode": "from manim import *\n\nclass Scene5(Scene):\n    def construct(self):\n        old_obj = Rectangle().set_color(WHITE).scale(0.8)\n        self.add(old_obj)\n        new_obj = Text('Mango').set_color(WHITE).scale(1.5)\n        self.play(Transform(old_obj, new_obj))\n"
+    },
+    {
+      "scene": 6,
+      "text": "",
+      "voice_over": "",
+      "videoCode": "from manim import *\n\nclass Scene6(Scene):\n    def construct(self):\n        old_obj = Text('Mango').set_color(WHITE).scale(1.5)\n        self.add(old_obj)\n        new_obj = Circle().set_color(WHITE).scale(2)\n        self.play(Transform(old_obj, new_obj))\n"
+    }
+  ]
+}

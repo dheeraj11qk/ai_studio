@@ -1,0 +1,374 @@
+[2026-03-28 20:27:44] ✅ JSON saved
+[2026-03-28 20:27:44] 📦 Loading JSON...
+[2026-03-28 20:27:44] ✅ Loaded 6 scenes
+[2026-03-28 20:27:44] 🎬 Creating scene files...
+[2026-03-28 20:27:44] ✅ Scene files created
+[2026-03-28 20:27:44] 🎥 Rendering scenes...
+[2026-03-28 20:27:44] ▶ Scene 1
+[2026-03-28 20:27:44] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:27:45] ❌ ERROR:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/bin/manim", line 8, in <module>
+    sys.exit(main())
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/manim/cli/render/commands.py", line 121, in render
+    for SceneClass in scene_classes_from_file(file):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/manim/utils/module_ops.py", line 171, in scene_classes_from_file
+    module = get_module(file_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/manim/utils/module_ops.py", line 65, in get_module
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py", line 3
+    "code": "from manim import *
+            ^
+SyntaxError: unterminated string literal (detected at line 3)
+
+[2026-03-28 20:27:45] 🔥 Pipeline failed: Command failed: manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:27:45] 🧹 Cleaning temp...
+[2026-03-28 20:27:45] ✅ Temp removed
+[2026-03-28 20:28:17] 🎬 Starting Pipeline for: 'Create a timer 5 second 1 to 5'
+[2026-03-28 20:28:17] ⚙️ Setting up folders...
+[2026-03-28 20:28:17] ✅ Folders ready
+[2026-03-28 20:28:17] 📄 Generating JSON...
+[2026-03-28 20:28:17] 🤖 Running Qwen model...
+[2026-03-28 20:29:56] ✅ JSON saved
+[2026-03-28 20:29:56] 📦 Loading JSON...
+[2026-03-28 20:29:56] ✅ Loaded 6 scenes
+[2026-03-28 20:29:56] 🎬 Creating scene files...
+[2026-03-28 20:29:56] ✅ Scene files created
+[2026-03-28 20:29:56] 🎥 Rendering scenes...
+[2026-03-28 20:29:56] ▶ Scene 1
+[2026-03-28 20:29:56] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:29:58] ▶ Scene 2
+[2026-03-28 20:29:58] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_2.py Scene2 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:30:00] ▶ Scene 3
+[2026-03-28 20:30:00] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_3.py Scene3 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:30:01] ▶ Scene 4
+[2026-03-28 20:30:01] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_4.py Scene4 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:30:02] ▶ Scene 5
+[2026-03-28 20:30:02] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_5.py Scene5 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:30:03] ▶ Scene 6
+[2026-03-28 20:30:03] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_6.py Scene6 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:30:05] ✅ All scenes rendered
+[2026-03-28 20:30:05] 📂 Collecting clips...
+[2026-03-28 20:30:05] ✅ 20 clips collected in /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/list.txt
+[2026-03-28 20:30:05] 🎬 Merging videos...
+[2026-03-28 20:30:05] $ ffmpeg -f concat -safe 0 -i /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/list.txt -c copy /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/output/final.mp4
+[2026-03-28 20:30:05] ✅ Final video: /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/output/final.mp4
+[2026-03-28 20:30:05] 🎬 Pipeline finished successfully!
+[2026-03-28 20:30:05] 🧹 Cleaning temp...
+[2026-03-28 20:30:05] ✅ Temp removed
+[2026-03-28 20:34:10] 🎬 Starting Pipeline for: 'Create a timer 5 second 1 to 5'
+[2026-03-28 20:34:10] ⚙️ Setting up folders...
+[2026-03-28 20:34:10] ✅ Folders ready
+[2026-03-28 20:34:10] 📄 Generating JSON...
+[2026-03-28 20:34:10] 🤖 Running Qwen model...
+[2026-03-28 20:35:39] ✅ JSON saved
+[2026-03-28 20:35:39] 📦 Loading JSON...
+[2026-03-28 20:35:39] ✅ Loaded 6 scenes
+[2026-03-28 20:35:39] 🎬 Creating scene files...
+[2026-03-28 20:35:39] ✅ Scene files created
+[2026-03-28 20:35:39] 🎥 Rendering scenes...
+[2026-03-28 20:35:39] ▶ Scene 1
+[2026-03-28 20:35:39] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:35:41] ▶ Scene 2
+[2026-03-28 20:35:41] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_2.py Scene2 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:35:42] ▶ Scene 3
+[2026-03-28 20:35:42] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_3.py Scene3 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:35:43] ❌ ERROR:
+╭────────── Traceback (most recent call last) ───────────╮
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/cli/render/commands.py:125 │
+│  in render                                             │
+│                                                        │
+│   122 │   │   │   try:                                 │
+│   123 │   │   │   │   with tempconfig({}):             │
+│   124 │   │   │   │   │   scene = SceneClass()         │
+│ ❱ 125 │   │   │   │   │   scene.render()               │
+│   126 │   │   │   except Exception:                    │
+│   127 │   │   │   │   error_console.print_exception()  │
+│   128 │   │   │   │   sys.exit(1)                      │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/scene/scene.py:260 in      │
+│ render                                                 │
+│                                                        │
+│    257 │   │   """                                     │
+│    258 │   │   self.setup()                            │
+│    259 │   │   try:                                    │
+│ ❱  260 │   │   │   self.construct()                    │
+│    261 │   │   except EndSceneEarlyException:          │
+│    262 │   │   │   pass                                │
+│    263 │   │   except RerunSceneException:             │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/quick_board_a │
+│ i/temp/scenes/scene_3.py:5 in construct                │
+│                                                        │
+│   2 class Scene3(Scene):                               │
+│   3 │   def construct(self):                           │
+│   4 │   │   number_4 = Text('4').scale(3).to_edge(RIGH │
+│ ❱ 5 │   │   self.play(Transform(number_5, number_4))   │
+│   6 │   │   self.wait(1)                               │
+│   7                                                    │
+╰────────────────────────────────────────────────────────╯
+NameError: name 'number_5' is not defined
+
+[2026-03-28 20:35:43] 🔥 Pipeline failed: Command failed: manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_3.py Scene3 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:35:43] 🧹 Cleaning temp...
+[2026-03-28 20:35:43] ✅ Temp removed
+[2026-03-28 20:37:15] 🎬 Starting Pipeline for: 'Create a timer 5 second 1 to 5'
+[2026-03-28 20:37:15] ⚙️ Setting up folders...
+[2026-03-28 20:37:15] ✅ Folders ready
+[2026-03-28 20:37:15] 📄 Generating JSON...
+[2026-03-28 20:37:15] 🤖 Running Qwen model...
+[2026-03-28 20:38:47] ✅ JSON saved
+[2026-03-28 20:38:47] 📦 Loading JSON...
+[2026-03-28 20:38:47] ✅ Loaded 6 scenes
+[2026-03-28 20:38:47] 🎬 Creating scene files...
+[2026-03-28 20:38:47] ✅ Scene files created
+[2026-03-28 20:38:47] 🎥 Rendering scenes...
+[2026-03-28 20:38:47] ▶ Scene 1
+[2026-03-28 20:38:47] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:38:49] ▶ Scene 2
+[2026-03-28 20:38:49] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_2.py Scene2 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:38:50] ▶ Scene 3
+[2026-03-28 20:38:50] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_3.py Scene3 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:38:52] ▶ Scene 4
+[2026-03-28 20:38:52] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_4.py Scene4 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:38:53] ▶ Scene 5
+[2026-03-28 20:38:53] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_5.py Scene5 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:38:54] ▶ Scene 6
+[2026-03-28 20:38:54] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_6.py Scene6 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 20:38:55] ✅ All scenes rendered
+[2026-03-28 20:38:55] 📂 Collecting clips...
+[2026-03-28 20:38:55] ✅ 12 clips collected in /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/list.txt
+[2026-03-28 20:38:55] 🎬 Merging videos...
+[2026-03-28 20:38:55] $ ffmpeg -f concat -safe 0 -i /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/list.txt -c copy /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/output/final.mp4
+[2026-03-28 20:38:56] ✅ Final video: /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/output/final.mp4
+[2026-03-28 20:38:56] 🎬 Pipeline finished successfully!
+[2026-03-28 20:38:56] 🧹 Cleaning temp...
+[2026-03-28 20:38:56] ✅ Temp removed
+[2026-03-28 20:47:28] 🎬 Starting Pipeline for: 'Create a timer 5 second 1 to 5'
+[2026-03-28 20:47:28] ⚙️ Setting up folders...
+[2026-03-28 20:47:28] ✅ Folders ready
+[2026-03-28 20:47:28] 📄 Generating JSON...
+[2026-03-28 20:47:28] 🤖 Running Qwen model...
+[2026-03-28 21:24:33] 🧹 Cleaning temp...
+[2026-03-28 21:24:33] ✅ Temp removed
+[2026-03-28 21:24:34] 🎬 Starting Pipeline for: 'Create a timer 5 second 1 to 5'
+[2026-03-28 21:24:34] ⚙️ Setting up folders...
+[2026-03-28 21:24:34] ✅ Folders ready
+[2026-03-28 21:24:34] 📄 Generating JSON...
+[2026-03-28 21:24:34] 🤖 Running Qwen model...
+[2026-03-28 21:26:36] ✅ Clean JSON saved
+[2026-03-28 21:26:36] 📦 Loading JSON...
+[2026-03-28 21:26:36] ✅ Loaded 7 scenes
+[2026-03-28 21:26:36] 🎬 Creating scene files...
+[2026-03-28 21:26:36] ✅ Scene files created
+[2026-03-28 21:26:36] 🎥 Rendering scenes...
+[2026-03-28 21:26:36] ▶ Scene 1
+[2026-03-28 21:26:36] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:26:38] ▶ Scene 2
+[2026-03-28 21:26:38] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_2.py Scene2 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:26:39] ▶ Scene 3
+[2026-03-28 21:26:39] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_3.py Scene3 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:26:40] ▶ Scene 4
+[2026-03-28 21:26:40] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_4.py Scene4 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:26:41] ❌ ERROR:
+╭────────── Traceback (most recent call last) ───────────╮
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/cli/render/commands.py:125 │
+│  in render                                             │
+│                                                        │
+│   122 │   │   │   try:                                 │
+│   123 │   │   │   │   with tempconfig({}):             │
+│   124 │   │   │   │   │   scene = SceneClass()         │
+│ ❱ 125 │   │   │   │   │   scene.render()               │
+│   126 │   │   │   except Exception:                    │
+│   127 │   │   │   │   error_console.print_exception()  │
+│   128 │   │   │   │   sys.exit(1)                      │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/scene/scene.py:260 in      │
+│ render                                                 │
+│                                                        │
+│    257 │   │   """                                     │
+│    258 │   │   self.setup()                            │
+│    259 │   │   try:                                    │
+│ ❱  260 │   │   │   self.construct()                    │
+│    261 │   │   except EndSceneEarlyException:          │
+│    262 │   │   │   pass                                │
+│    263 │   │   except RerunSceneException:             │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/quick_board_a │
+│ i/temp/scenes/scene_4.py:5 in construct                │
+│                                                        │
+│   2                                                    │
+│   3 class Scene4(Scene):                               │
+│   4 │   def construct(self):                           │
+│ ❱ 5 │   │   number_2 = Text('2').next_to(number_1, RIG │
+│   6 │   │   self.add(number_2)                         │
+│   7 │   │   self.play(Transform(number_1, number_2))   │
+│   8 │   │   self.wait(2.5)                             │
+╰────────────────────────────────────────────────────────╯
+NameError: name 'number_1' is not defined
+
+[2026-03-28 21:26:41] 🔥 Pipeline failed: Command failed: manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_4.py Scene4 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:26:41] 🧹 Cleaning temp...
+[2026-03-28 21:26:41] ✅ Temp removed
+[2026-03-28 21:28:50] 🎬 Starting Pipeline for: 'Mango grow geourny video 1 minutes'
+[2026-03-28 21:28:50] ⚙️ Setting up folders...
+[2026-03-28 21:28:50] ✅ Folders ready
+[2026-03-28 21:28:50] 📄 Generating JSON...
+[2026-03-28 21:28:50] 🤖 Running Qwen model...
+[2026-03-28 21:30:37] ✅ Clean JSON saved
+[2026-03-28 21:30:37] 📦 Loading JSON...
+[2026-03-28 21:30:37] ✅ Loaded 6 scenes
+[2026-03-28 21:30:37] 🎬 Creating scene files...
+[2026-03-28 21:30:37] ✅ Scene files created
+[2026-03-28 21:30:37] 🎥 Rendering scenes...
+[2026-03-28 21:30:37] ▶ Scene 1
+[2026-03-28 21:30:37] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:30:39] ▶ Scene 2
+[2026-03-28 21:30:39] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_2.py Scene2 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:30:40] ▶ Scene 3
+[2026-03-28 21:30:40] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_3.py Scene3 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:30:41] ▶ Scene 4
+[2026-03-28 21:30:41] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_4.py Scene4 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:30:42] ▶ Scene 5
+[2026-03-28 21:30:42] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_5.py Scene5 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:30:43] ❌ ERROR:
+╭────────── Traceback (most recent call last) ───────────╮
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/cli/render/commands.py:125 │
+│  in render                                             │
+│                                                        │
+│   122 │   │   │   try:                                 │
+│   123 │   │   │   │   with tempconfig({}):             │
+│   124 │   │   │   │   │   scene = SceneClass()         │
+│ ❱ 125 │   │   │   │   │   scene.render()               │
+│   126 │   │   │   except Exception:                    │
+│   127 │   │   │   │   error_console.print_exception()  │
+│   128 │   │   │   │   sys.exit(1)                      │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/scene/scene.py:260 in      │
+│ render                                                 │
+│                                                        │
+│    257 │   │   """                                     │
+│    258 │   │   self.setup()                            │
+│    259 │   │   try:                                    │
+│ ❱  260 │   │   │   self.construct()                    │
+│    261 │   │   except EndSceneEarlyException:          │
+│    262 │   │   │   pass                                │
+│    263 │   │   except RerunSceneException:             │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/quick_board_a │
+│ i/temp/scenes/scene_5.py:7 in construct                │
+│                                                        │
+│   4 │   def construct(self):                           │
+│   5 │   │   rectangle = Rectangle().set_color(WHITE).s │
+│   6 │   │   self.add(rectangle)                        │
+│ ❱ 7 │   │   self.play(Transform(rectangle, Polygon([[- │
+│   8 │   │   self.wait(2)                               │
+│   9                                                    │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/mobject/geometry/polygram. │
+│ py:330 in __init__                                     │
+│                                                        │
+│   327 │   """                                          │
+│   328 │                                                │
+│   329 │   def __init__(self, *vertices: Point3DLike, * │
+│ ❱ 330 │   │   super().__init__(vertices, **kwargs)     │
+│   331                                                  │
+│   332                                                  │
+│   333 class RegularPolygram(Polygram):                 │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/mobject/geometry/polygram. │
+│ py:96 in __init__                                      │
+│                                                        │
+│    93 │   │   │   first_vertex, *vertices = vertices   │
+│    94 │   │   │   first_vertex = np.array(first_vertex │
+│    95 │   │   │                                        │
+│ ❱  96 │   │   │   self.start_new_path(first_vertex)    │
+│    97 │   │   │   self.add_points_as_corners(          │
+│    98 │   │   │   │   [*(np.array(vertex) for vertex i │
+│    99 │   │   │   )                                    │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/mobject/types/vectorized_m │
+│ object.py:882 in start_new_path                        │
+│                                                        │
+│    879 │   │   │   closure = [last_anchor] * (nppc - ( │
+│    880 │   │   │   self.append_points(closure + [point │
+│    881 │   │   else:                                   │
+│ ❱  882 │   │   │   self.append_points([point])         │
+│    883 │   │   return self                             │
+│    884 │                                               │
+│    885 │   def add_cubic_bezier_curve(                 │
+│                                                        │
+│ /Users/dheerajgautam/Documents/ai_studio/.venv/lib/pyt │
+│ hon3.10/site-packages/manim/mobject/types/vectorized_m │
+│ object.py:851 in append_points                         │
+│                                                        │
+│    848 │   │   n = len(self.points)                    │
+│    849 │   │   points = np.empty((n + len(new_points), │
+│    850 │   │   points[:n] = self.points                │
+│ ❱  851 │   │   points[n:] = new_points                 │
+│    852 │   │   self.points = points                    │
+│    853 │   │   return self                             │
+│    854                                                 │
+╰────────────────────────────────────────────────────────╯
+ValueError: setting an array element with a sequence. The 
+requested array would exceed the maximum number of 
+dimension of 2.
+
+[2026-03-28 21:30:43] 🔥 Pipeline failed: Command failed: manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_5.py Scene5 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:30:43] 🧹 Cleaning temp...
+[2026-03-28 21:30:43] ✅ Temp removed
+[2026-03-28 21:31:33] 🎬 Starting Pipeline for: 'Mango grow geourny video 1 minutes'
+[2026-03-28 21:31:33] ⚙️ Setting up folders...
+[2026-03-28 21:31:33] ✅ Folders ready
+[2026-03-28 21:31:33] 📄 Generating JSON...
+[2026-03-28 21:31:33] 🤖 Running Qwen model...
+[2026-03-28 21:33:07] ✅ Clean JSON saved
+[2026-03-28 21:33:07] 📦 Loading JSON...
+[2026-03-28 21:33:07] ✅ Loaded 6 scenes
+[2026-03-28 21:33:07] 🎬 Creating scene files...
+[2026-03-28 21:33:07] ✅ Scene files created
+[2026-03-28 21:33:07] 🎥 Rendering scenes...
+[2026-03-28 21:33:07] ▶ Scene 1
+[2026-03-28 21:33:07] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_1.py Scene1 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:33:09] ▶ Scene 2
+[2026-03-28 21:33:09] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_2.py Scene2 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:33:11] ▶ Scene 3
+[2026-03-28 21:33:11] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_3.py Scene3 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:33:12] ▶ Scene 4
+[2026-03-28 21:33:12] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_4.py Scene4 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:33:13] ▶ Scene 5
+[2026-03-28 21:33:13] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_5.py Scene5 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:33:15] ▶ Scene 6
+[2026-03-28 21:33:15] $ manim -ql /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/scenes/scene_6.py Scene6 --media_dir /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp
+[2026-03-28 21:33:16] ✅ All scenes rendered
+[2026-03-28 21:33:16] 📂 Collecting clips...
+[2026-03-28 21:33:16] ✅ 12 clips collected in /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/list.txt
+[2026-03-28 21:33:16] 🎬 Merging videos...
+[2026-03-28 21:33:16] $ ffmpeg -f concat -safe 0 -i /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/temp/list.txt -c copy /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/output/final.mp4
+[2026-03-28 21:33:16] ✅ Final video: /Users/dheerajgautam/Documents/ai_studio/quick_board_ai/output/final.mp4
+[2026-03-28 21:33:16] 🎬 Pipeline finished successfully!
+[2026-03-28 21:33:16] 🧹 Cleaning temp...
+[2026-03-28 21:33:16] ✅ Temp removed
