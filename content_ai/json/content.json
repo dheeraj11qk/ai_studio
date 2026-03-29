@@ -1,55 +1,49 @@
 {
-    "title": "हालांकि मैं एक कॉन्ट्रोलर था पर मेरा गति बहुत जल्दी नहीं है",
-    "description": "यह एक सामान्य रॉबोट की कहानी है जिसे वेटर पसन्द था लेकिन बहुत गति में नहीं पा सका। इस कहानी में आप तथ्यों के साथ खूब खेलने वाले होंगे!",
+    "title": "कैनी रोबोट का साफेदपंखा उपवासी वर्त्तमान था",
+    "description": "यह एक मजेदार रोबोट की कहानी है जो विश्वसनीय वर्त्तमान के लिए चाहता था, लेकिन बहुत धीमे संप्रश्न।",
     "tracks": {
         "voice": [
             {
                 "id": "v1",
-                "text": "हालांकि मैं एक कॉन्ट्रोलर था पर मेरा गति बहुत जल्दी नहीं है...",
+                "text": "एक दिन, रोबोट कैनी वर्त्तमान में शुरू होता है।",
                 "start": 0.0,
                 "speed": 1.2,
-                "emotion": "mock-serious"
+                "emotion": "neutral"
             },
             {
                 "id": "gap1",
                 "type": "silence",
-                "duration": 1.5,
-                "start": 3.0
+                "duration": 0.5,
+                "start": 3.8
             },
             {
                 "id": "v2",
-                "text": "मैं लगातार जल्दी से घूम रहा हूँ... लेकिन वास्तव में कुछ गति में नहीं आता।",
+                "text": "वह अपने मास्टर से कहता है, 'मास्टर, मुझसे एक विश्वसनीय उपवासी निकालें।'",
                 "start": 4.5,
                 "speed": 1.0,
-                "emotion": "sarcastic"
+                "emotion": "curious"
             },
             {
                 "id": "gap2",
                 "type": "silence",
                 "duration": 0.3,
-                "start": 6.7
+                "start": 7.0
             },
             {
                 "id": "v3",
-                "text": "...इसलिए मेरा काम वैसे ही रहता है। तुम्हें पता है कि जो लगने लगे, मेरा नियंत्रण भी नहीं सकता है।",
-                "start": 7.0,
-                "speed": 1.1,
-                "emotion": "happy"
+                "text": "मास्टर ने बताया, 'अच्छी तरह से कुछ धूप पर होगा।'",
+                "start": 7.5,
+                "speed": 1.0,
+                "emotion": "neutral"
             },
             {
                 "id": "gap3",
                 "type": "silence",
                 "duration": 1.5,
-                "start": 12.5
+                "start": 9.8
             }
         ],
-        "sfx": [
-            {
-                "file": "tik_tok_funny_sound_effects_download.mp3",
-                "start": 9.0,
-                "volume": 0.8
-            }
-        ],
+        "sfx": [],
         "music": [
             {
                 "file": "funny_bg.mp3",
@@ -60,25 +54,32 @@
         ],
         "visuals": [
             {
-                "description": "एक सामान्य रॉबोट जो घूम रहा है लेकिन बहुत गति में नहीं पा सका",
-                "search_key_word": "रॉबोट घूमने का वीडियो",
+                "description": "एक रोबोट ने मास्टर से उपवासी लेने का प्रयास कर रहा है",
+                "search_key_word": "robot asking master for a job",
                 "start": 0.0,
                 "duration": 5.0,
                 "timeline": "00:00 - 00:05"
             },
             {
-                "description": "रॉबोट जल्दी से घूमना चाहता है पर बहुत गति में नहीं पा सका",
-                "search_key_word": "रॉबोट काम करने का वीडियो",
+                "description": "रोबोट ने मास्टर से बातचीत कर रहा है",
+                "search_key_word": "robot talking to master",
                 "start": 5.0,
                 "duration": 5.0,
                 "timeline": "00:05 - 00:10"
             },
             {
-                "description": "रॉबोट ने सफलतापूर्ण रूप से काम करना सीखा",
-                "search_key_word": "रॉबोट नियंत्रण प्रदर्शन",
+                "description": "मास्टर ने रोबोट को उपवासी दिया है",
+                "search_key_word": "master giving job to robot",
                 "start": 10.0,
                 "duration": 5.0,
                 "timeline": "00:10 - 00:15"
+            },
+            {
+                "description": "रोबोट ने अपनी कार्यक्रम का प्रारूप बदल दिया है",
+                "search_key_word": "robot changing his work schedule",
+                "start": 15.0,
+                "duration": 5.0,
+                "timeline": "00:15 - 00:20"
             }
         ]
     }
