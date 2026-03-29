@@ -1,0 +1,6 @@
+Pacing: Rhythmic and story-driven.
+Pause Style: 'The Narrative Flow'. 
+- Tension moments: 1.2 to 2.5 seconds to build suspense.
+- Key transitions: 0.8s 'beat' before moving on.
+- Emotion: Empathetic, balanced, and professional.
+Instruction: Vary silence durations between 0.3s (quick cut) and 1.5s (dramatic pause). Move naturally.

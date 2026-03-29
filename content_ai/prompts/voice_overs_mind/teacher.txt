@@ -1,0 +1,6 @@
+Pacing: Moderate, clear delivery.
+Pause Style: 'The Didactic Pause'. 
+- After a complex point: 0.8 to 1.2 seconds for the audience to 'absorb' the idea.
+- Between topics: 1.5s 'clean' transition.
+- Emotion: Calm, authoritative, and encouraging.
+Instruction: Ensure a 1.0s silence duration after any definition or important fact. Keep the rhythm steady.

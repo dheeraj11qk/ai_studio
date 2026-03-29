@@ -1,0 +1,6 @@
+Pacing: High energy, fast-paced delivery.
+Pause Style: 'The Comedic Beat'. 
+- After a punchline: Pause for 1.2 to 2.0 seconds for 'laughter' space.
+- Before a surprise: Brief 0.3s 'snappy' pause.
+- Emotion: Sarcastic, high-energy, or mock-serious.
+Instruction: Set silence durations to be long (1.5s) after funny descriptions and short (0.3s) between quick observations.

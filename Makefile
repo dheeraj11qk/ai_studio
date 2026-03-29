@@ -1,4 +1,9 @@
 TOPIC      ?= a turtle exploring a magical pond
+DURATION   ?= 5 sec
+LANG       ?= en
+QUICKBOARD ?= false
+CHARACTER  ?= communicator
+MODE       ?= landscape
 APP_SCHEME  = meta_ai_app
 APP_PROJECT = meta_ai/meta_ai_app.xcodeproj
 APP_BUNDLE  = meta_ai/meta_ai_app.app
@@ -7,8 +12,8 @@ VENV        = .venv/bin/python
 .PHONY: video video_test build-app open-app kill-app content_test voice_test ollama-start
 
 ## Run full pipeline
-video: ollama-start open-app
-	PYTHONPATH=$(PWD) $(VENV) agent_ai/agent.py "$(TOPIC)"
+video: ollama-start 
+	PYTHONPATH=$(PWD) $(VENV) agent_ai/agent.py "$(TOPIC)" "$(DURATION)" "$(LANG)" "$(QUICKBOARD)" "$(CHARACTER)" "$(MODE)"
 
 ## Run video generation test (force kill + relaunch app)
 video_test: open-app
